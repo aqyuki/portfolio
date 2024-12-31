@@ -1,9 +1,4 @@
 import Image from 'next/image'
-import type { CSSProperties } from 'react'
-
-const imageStyle: CSSProperties = {
-  borderRadius: '50%',
-}
 
 export function Avatar() {
   return (
@@ -13,7 +8,7 @@ export function Avatar() {
       width={180}
       height={180}
       priority
-      style={imageStyle}
+      className="rounded-4xl"
     />
   )
 }
