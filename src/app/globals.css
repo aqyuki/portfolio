@@ -1,6 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --font-size: 12px;
-  --grid-gap: 1rem;
   --background: linear-gradient(
     15deg,
     rgba(168, 202, 240, 1) 20%,
@@ -13,12 +16,11 @@ body {
   font-size: var(--font-size);
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
   display: grid;
-  padding: 0 var(--grid-gap);
-  gap: var(--grid-gap);
+  padding: 0 theme(gap.1rem);
+  gap: theme(gap.1rem);
   grid-template-columns: repeat(12, 1fr);
 }
