@@ -25,10 +25,12 @@ const heroTitleGroup: CSSProperties = {
 
 const sawarabiGothic = Sawarabi_Gothic({
   weight: '400',
+  subsets: ['latin'],
 })
 
 const andika = Andika({
   weight: '400',
+  subsets: ['latin'],
 })
 
 export function Hero() {
