@@ -1,21 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --background: #ffffff;
+  --font-size: 12px;
+  --grid-gap: 1rem;
+  --background: linear-gradient(
+    15deg,
+    rgba(168, 202, 240, 1) 20%,
+    rgba(233, 240, 250, 1) 80%
+  );
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
+  font-size: var(--font-size);
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: grid;
+  padding: 0 var(--grid-gap);
+  gap: var(--grid-gap);
+  grid-template-columns: repeat(12, 1fr);
 }
