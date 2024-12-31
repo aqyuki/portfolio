@@ -9,6 +9,7 @@
     "check": "biome check ./src",
     "check:lint": "biome lint ./src",
     "check:format": "biome format ./src",
+    "ci": "biome ci ./src",
     "fix:lint": "biome lint ./src --write",
     "fix:format": "biome format ./src --write",
     "postinstall": "lefthook install"
