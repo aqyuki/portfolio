@@ -41,4 +41,4 @@ jobs:
       - name: install dependencies
         run: pnpm install --frozen-lockfile
       - name: run check
-        run: pnpm ci
+        run: pnpm run ci
