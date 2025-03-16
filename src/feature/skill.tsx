@@ -15,8 +15,8 @@ export function Skill() {
           ### Language
         </h3>
         <ListImte>Go</ListImte>
-        <ListImte>Python</ListImte>
-        <ListImte>JavaScript</ListImte>
+        <ListImte>Rust</ListImte>
+        <ListImte>TypeScript</ListImte>
       </div>
 
       <div className={mergeStyles('my-2')}>
